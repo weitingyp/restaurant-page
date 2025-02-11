@@ -74,3 +74,4 @@ page.appendChild(topDishesDiv);
 page.appendChild(ctaDiv.cloneNode(true));
 
 export default page;
+export {heroDiv};

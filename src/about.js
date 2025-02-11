@@ -1,6 +1,11 @@
+import { heroDiv } from "./home";
+import "./styles.css";
+
 const aboutPage = document.createElement("div");
 aboutPage.className = "page";
 
-aboutPage.innerText = "about";
+const cloneHeroDiv = heroDiv.cloneNode(true);
+
+aboutPage.appendChild(cloneHeroDiv);
 
 export default aboutPage;
