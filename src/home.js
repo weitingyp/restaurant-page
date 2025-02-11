@@ -28,9 +28,40 @@ ctaBtn.innerText = "Order Now";
 
 ctaDiv.appendChild(ctaBtn);
 
+// top dishes div 
+const topDishesDiv = document.createElement("div");
+topDishesDiv.id = "top-dishes-content";
+
+const topDishesCardContainer = document.createElement("div");
+topDishesCardContainer.id = "top-dishes-card-container";
+
+const topDishesTitle = document.createElement("h1");
+topDishesTitle.innerText = "Top Dishes";
+
+const topDishesCard = document.createElement("div");
+topDishesCard.className = "top-dish-card";
+
+const topDishName = document.createElement("div");
+topDishName.className = "top-dish-name";
+topDishName.innerText = "Good Ol' Pho"
+
+const topDishImg = document.createElement("div");
+topDishImg.className = "top-dish-img";
+
+const topDishDesc = document.createElement("div");
+topDishDesc.innerText = "Pho-king good family recipe.";
+
+topDishesDiv.appendChild(topDishesTitle);
+topDishesDiv.appendChild(topDishesCardContainer);
+topDishesCardContainer.appendChild(topDishesCard);
+topDishesCard.appendChild(topDishName);
+topDishesCard.appendChild(topDishImg);
+topDishesCard.appendChild(topDishDesc);
+
 // home page 
 
 page.appendChild(heroDiv);
 page.appendChild(ctaDiv);
+page.appendChild(topDishesDiv);
 
 export default page;

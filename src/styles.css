@@ -53,3 +53,38 @@ button.cta-btn:active{
     box-shadow: 2px 2px 2px 0 var(--font-color);
 }
 
+/*  Top Dishes Div */
+
+div#top-dishes-content{
+    height: 50vh;
+    width: 100vw;
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    padding: 45px;
+}
+
+div#top-dishes-card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.top-dish-card{
+    background-color: var(--primary-color);
+    padding: 24px;
+    border-radius: 20px;
+    color: var(--font-color);
+}
+
+div.top-dish-img{
+    height: 150px;
+    width: 200px;
+    background-image: url("./assets/pho-img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 10px 0;
+}
+
+div.top-dish-name{
+    font-weight: bold;
+    text-align: center;
+}
