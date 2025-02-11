@@ -61,6 +61,11 @@ topDishesCard.appendChild(topDishName);
 topDishesCard.appendChild(topDishImg);
 topDishesCard.appendChild(topDishDesc);
 
+for (let x = 0; x < 3; x++){
+    const cardClone = topDishesCard.cloneNode(true);
+    topDishesCardContainer.appendChild(cardClone);
+}
+
 // home page 
 
 page.appendChild(heroDiv);
