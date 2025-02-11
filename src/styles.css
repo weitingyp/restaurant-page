@@ -21,9 +21,35 @@ div#hero-content{
     box-sizing: border-box;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                 url('./assets/pho-img.jpg');
-    color: white;
+    color: var(--bg-color);
     background-size: cover;
     background-position: center;
 
     padding: 45px;
 }
+
+/* CTA Banner */
+
+div.cta-banner{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+button.cta-btn{
+    padding: 1.5rem;
+    background-color: var(--accent-color);
+    border: 1px solid var(--bg-color);
+    border-radius: 15px;
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+button.cta-btn:active{
+    box-shadow: 2px 2px 2px 0 var(--font-color);
+}
+
