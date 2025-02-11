@@ -1,5 +1,6 @@
 import { heroDiv } from "./home";
 import "./styles.css";
+import "./about_styles.css";
 
 const aboutPage = document.createElement("div");
 aboutPage.className = "page";
@@ -8,7 +9,12 @@ const cloneHeroDiv = heroDiv.cloneNode(true);
 
 const aboutBio = document.createElement("div");
 aboutBio.id = "about-container";
-aboutBio.innerText = `
+
+const aboutBioTitle = document.createElement("h1");
+aboutBioTitle.innerText = "About Us";
+
+const aboutBioText = document.createElement("div");
+aboutBioText.innerText = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut quam metus. In turpis lacus, molestie vitae feugiat vel, rutrum id justo. Aenean cursus pellentesque massa, quis condimentum massa vehicula nec. Sed in ipsum sem. Pellentesque viverra volutpat erat, sit amet ultrices ante dignissim ac. Morbi lobortis dignissim tincidunt. Phasellus mauris est, luctus bibendum convallis a, luctus eget ligula. Phasellus lobortis orci ac dolor vulputate consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque in massa in mauris dapibus aliquam eget ac purus. Nulla a enim porttitor, tristique ligula id, efficitur nibh. Curabitur tempus velit lorem, ut mattis eros tincidunt vitae. Proin et sem id orci iaculis ultrices ac eget velit.
 
 Cras nec venenatis leo. Vivamus augue libero, hendrerit a justo at, dictum volutpat purus. In dictum augue non tellus maximus dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque porta pulvinar purus, nec luctus ex eleifend sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus sed arcu placerat, accumsan diam ut, facilisis lacus. Phasellus et magna venenatis, lobortis nunc et, mollis felis. Ut vel blandit orci.
@@ -22,5 +28,7 @@ Fusce at augue quis neque tempus tincidunt. Ut id risus mollis neque ultricies b
 
 aboutPage.appendChild(cloneHeroDiv);
 aboutPage.appendChild(aboutBio);
+aboutBio.appendChild(aboutBioTitle);
+aboutBio.appendChild(aboutBioText);
 
 export default aboutPage;

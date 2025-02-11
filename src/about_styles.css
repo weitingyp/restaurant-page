@@ -1,0 +1,7 @@
+div#about-container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
