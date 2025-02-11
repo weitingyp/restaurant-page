@@ -63,5 +63,6 @@ topDishesCard.appendChild(topDishDesc);
 page.appendChild(heroDiv);
 page.appendChild(ctaDiv);
 page.appendChild(topDishesDiv);
+page.appendChild(ctaDiv.cloneNode(true));
 
 export default page;
