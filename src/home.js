@@ -1,3 +1,5 @@
+import topDishImgFile from "./assets/pho-img.jpg";
+
 const page = document.createElement("div");
 page.id = "home-page";
 page.style.height = '100vh';
@@ -45,7 +47,8 @@ const topDishName = document.createElement("div");
 topDishName.className = "top-dish-name";
 topDishName.innerText = "Good Ol' Pho"
 
-const topDishImg = document.createElement("div");
+const topDishImg = document.createElement("img");
+topDishImg.src = topDishImgFile;
 topDishImg.className = "top-dish-img";
 
 const topDishDesc = document.createElement("div");

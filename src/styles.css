@@ -75,12 +75,11 @@ div.top-dish-card{
     color: var(--font-color);
 }
 
-div.top-dish-img{
+img.top-dish-img{
     height: 150px;
     width: 200px;
-    background-image: url("./assets/pho-img.jpg");
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin: 10px 0;
 }
 
