@@ -1,0 +1,17 @@
+body, div#content{
+    height: 100vh;
+    width: 100vw;
+}
+
+div#hero-content{
+    height: 33%;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('./assets/pho-img.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+
+    padding: 45px;
+}
