@@ -28,6 +28,32 @@ div#hero-content{
     padding: 45px;
 }
 
+/* Nav bar */
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 6px 6px;
+    background-color: var(--accent-color);
+}
+
+nav button{
+    height: 100%;
+    width: 10rem;
+    background-color: transparent;
+    border: none;
+    padding: 6px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+nav button:active{
+    color: var(--bg-color);
+}
+
 /* CTA Banner */
 
 div.cta-banner{
